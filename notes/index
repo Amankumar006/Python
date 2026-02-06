@@ -1,9 +1,0 @@
-###-----------------index-----------------###
-
-# define index : returns the index of the first occurrence of a specified value in a list
-
-courses =['Math','Physics','Chemistry','Biology']
-print(courses.index('Biology'))
-
-print('Math' in courses)  # returns True if the element is present in the list else False
-

@@ -104,6 +104,10 @@ courses =['Math','Physics','Chemistry','Biology']
 for index,item in enumerate(courses,start=1): # returns the index and the item example: 1 Math
     print(index,item) # 1 Math
 
+courses_str=' , '.join(courses) # joins the list with a string example: Math , Physics , Chemistry , Biology
+
+print(courses_str)
+
 
 
 

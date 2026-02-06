@@ -1,20 +1,47 @@
-###-----------------append/Extend/pop-----------------###
+# List Methods: Append, Extend, Pop
 
-# define append : adds to the end of the list
-# define extend : adds all elements from an iterable (such as a list, tuple, or string) to the end of an existing list, modifying it in-place and increasing its length
-# define insert : adds to the specified index
-# define remove : removes the specified element
-# define pop : removes the element at the specified index
+Common methods to modify lists.
 
-# courses.append('Computer Science') # adds to the end of the list
-# courses.extend(['Computer Science']) # adds all elements from an iterable (such as a list, tuple, or string) to the end of an existing list, modifying it in-place and increasing its length
-# courses.insert(1,'Computer Science') # adds to the specified index
-# courses.remove('Math') # removes the specified element
-# courses.pop() # removes the last element
-# courses.pop(1) # removes the element at the specified index
+## Adding Elements
 
-# print(courses)
+- **`append()`**: Adds a single item to the end of the list.
+- **`extend()`**: Adds all elements from another iterable (list, tuple, string) to the end.
+- **`insert()`**: Adds an element at a specified index position.
 
+```python
+courses = ['Math', 'Physics']
 
+# Append
+courses.append('Computer Science')
+print(courses)
+# Output: ['Math', 'Physics', 'Computer Science']
 
+# Extend
+courses.extend(['Art', 'History'])
+print(courses)
+# Output: ['Math', 'Physics', 'Computer Science', 'Art', 'History']
 
+# Insert
+courses.insert(0, 'Biology') # Insert at index 0
+print(courses)
+# Output: ['Biology', 'Math', 'Physics', 'Computer Science', 'Art', 'History']
+```
+
+## Removing Elements
+
+- **`remove()`**: Removes the first occurrence of a logical value.
+- **`pop()`**: Removes and returns an element at a specific index (default is the last one).
+
+```python
+# Remove a specific value
+courses.remove('Math')
+print(courses)
+
+# Pop the last element
+last_popped = courses.pop()
+print(last_popped) # Output: History
+
+# Pop from a specific index
+first_popped = courses.pop(0)
+print(first_popped) # Output: Biology
+```

@@ -1,28 +1,49 @@
-# ------->>> Sortings
-###-----------------sort/reverse-----------------###
+# Sortings
 
-# define sort : sorts the list in ascending order
-# define reverse : reverses the list
+Methods to sort and organize lists in Python.
 
-# courses.sort() # sorts the list in ascending order
-# courses.reverse() # reverses the list
-# courses.sort(reverse=True) # sorts the list in descending order
+## Sort and Reverse
 
-# sorted_courses = sorted(courses) # sorts the list in ascending order
+- **`sort()`**: Sorts the list in ascending order (modifies the original list).
+- **`reverse()`**: Reverses the order of the list (modifies the original list).
+- **`sorted()`**: Returns a *new* sorted list (does not modify the original).
 
+```python
+courses = ['Math', 'Physics', 'Chemistry', 'Biology']
 
-# print(sorted_courses)
-# print(courses)
+# Sort in ascending order
+courses.sort()
+print(courses) 
 
-###-----------------min/max/sum/len-----------------###
+# Reverse the list
+courses.reverse()
+print(courses)
 
-# define min : returns the smallest item in an iterable or the smallest of two or more arguments
-# define max : returns the largest item in an iterable or the largest of two or more arguments
-# define sum : returns the sum of all items in an iterable
-# define len : returns the number of items in an iterable
+# Sort in descending order
+courses.sort(reverse=True)
+print(courses)
+```
 
-numbers=[1,2,3,4,5,6,7,8,9,10]
-print(min(numbers))
-print(max(numbers))
-print(sum(numbers))
-print(len(numbers))
+### Using sorted() function
+Use this when you want to keep the original list unchanged.
+
+```python
+sorted_courses = sorted(courses)
+print(sorted_courses)
+```
+
+## Useful Built-in Functions
+
+- **`min()`**: Returns the smallest item.
+- **`max()`**: Returns the largest item.
+- **`sum()`**: Returns the sum of all items.
+- **`len()`**: Returns the number of items.
+
+```python
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+print(min(numbers)) # Output: 1
+print(max(numbers)) # Output: 10
+print(sum(numbers)) # Output: 55
+print(len(numbers)) # Output: 10
+```

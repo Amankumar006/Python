@@ -1,13 +1,31 @@
- define casting : converting one data type to another data type
+# Type Casting
 
+**Casting** is the process of converting one data type to another.
 
- Example:
-# num_1='100' # string
-# num_2='200' # string
+## Example: String to Integer
 
-# num1=int(num_1) # integer
-# num2=int(num_2) # integer
+Converting string numbers to integers allows for mathematical operations.
 
-# print(num1+num2) # 300
+```python
+num_1 = '100' # string
+num_2 = '200' # string
 
-# print(int(num_1)+int(num_2)) # 300
+# Without casting, + concatenates strings
+# print(num_1 + num_2) # Output: 100200
+
+# Casting to integer
+num1 = int(num_1)
+num2 = int(num_2)
+
+print(num1 + num2) 
+# Output: 300
+```
+
+## Single Line Casting
+
+You can cast directly within expressions.
+
+```python
+print(int(num_1) + int(num_2)) 
+# Output: 300
+```
