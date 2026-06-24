@@ -23,3 +23,13 @@ summary = summarizer(text, max_length=60, min_length=30, do_sample=False)
 
 # Print the summarized output
 print(summary[0]['generated_text'])
+
+
+
+from transformer import pipeline
+summarizer = pipeline("text-generated",model="t5-small")
+text = """
+summarize:
+"""
+summary = summarizer(text, max_length=60, min_length=30, do_sample=False)
+print (summary[0]['generated_text'])

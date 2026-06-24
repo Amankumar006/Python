@@ -1,4 +1,8 @@
-# program 3
+# ============================================================
+# PROGRAM 3 QUESTION
+# Develop a program to implement Principal Component Analysis (PCA)
+# for reducing the dimensionality of the Iris dataset from 4 features to 2.
+# ============================================================
 # pip install scikit-learn matplotlib
 
 import matplotlib.pyplot as plt

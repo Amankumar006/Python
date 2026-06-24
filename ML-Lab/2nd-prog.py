@@ -1,4 +1,12 @@
-# program 2
+# ============================================================
+# PROGRAM 2 QUESTION
+# Develop a program to load a dataset with at least two numerical
+# columns (e.g., Iris, Titanic). Plot a scatter plot of two variables and
+# calculate their Pearson correlation coefficient. Write a program to compute
+# the covariance and correlation matrix for a dataset. Visualize the correlation
+# matrix using a heatmap to know which variables have strong positive/negative
+# correlations.
+# ============================================================
 # pip install pandas matplotlib seaborn
 # Place titanic_train.csv in the same directory before running.
 

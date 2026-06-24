@@ -1,4 +1,10 @@
-# program 7
+# ============================================================
+# PROGRAM 7 QUESTION
+# Develop a program to demonstrate the working of Linear Regression
+# and Polynomial Regression. Use Boston Housing Dataset for Linear Regression
+# and Auto MPG Dataset for vehicle fuel efficiency prediction for Polynomial
+# Regression.
+# ============================================================
 # pip install pandas scikit-learn matplotlib
 # Place BostonHousing.csv and auto-mpg.csv in the same directory before running.
 
